@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenu" customModule="Mobile_Mechanic" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="frn-8c-4Pv"/>
+                <outlet property="logoutButton" destination="0El-4l-VDh" id="hHr-WE-PU2"/>
+                <outlet property="toggleViewButton" destination="IrJ-GP-Ues" id="tWy-k4-OdA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.97999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rt-gq-A2N">
+                    <rect key="frame" x="0.0" y="-35" width="352" height="976"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0El-4l-VDh">
+                            <rect key="frame" x="151" y="827" width="50" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="logoutAction:" destination="-1" eventType="touchUpInside" id="NFz-rH-cS5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0El-4l-VDh" firstAttribute="centerX" secondItem="8rt-gq-A2N" secondAttribute="centerX" id="FCR-zQ-ONo"/>
+                        <constraint firstAttribute="bottom" secondItem="0El-4l-VDh" secondAttribute="bottom" constant="119" id="uHc-im-VBY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-GP-Ues">
+                    <rect key="frame" x="342" y="747" width="67" height="134"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IrJ-GP-Ues" secondAttribute="height" multiplier="1:2" id="ypt-mB-6jv"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="40" maxX="10" maxY="40"/>
+                    <state key="normal" title="toggle">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleViewAction:" destination="-1" eventType="touchUpInside" id="tOL-7X-Lnh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IrJ-GP-Ues" secondAttribute="trailing" constant="5" id="0MI-nF-Syr"/>
+                <constraint firstItem="IrJ-GP-Ues" firstAttribute="leading" secondItem="8rt-gq-A2N" secondAttribute="trailing" constant="-10" id="9Mj-BG-PuH"/>
+                <constraint firstItem="IrJ-GP-Ues" firstAttribute="bottom" secondItem="8rt-gq-A2N" secondAttribute="bottom" constant="-60" id="OvI-br-pUv"/>
+                <constraint firstItem="8rt-gq-A2N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sxt-B9-NMq"/>
+                <constraint firstItem="8rt-gq-A2N" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="WWT-dI-Gac"/>
+                <constraint firstItem="8rt-gq-A2N" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="80" id="dNA-F6-RNg"/>
+                <constraint firstItem="8rt-gq-A2N" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="jdL-ZK-Bov"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </view>
+    </objects>
+</document>
